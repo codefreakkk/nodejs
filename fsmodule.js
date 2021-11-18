@@ -28,3 +28,21 @@ const fs = require("fs");
 
 // delete file
 // fs.unlinkSync("read.txt");
+
+// --------------------------------------
+// Asynchrnous way
+
+// fs.writeFile("read.txt", "This is asynchronous way", (err) => {
+//     console.log(err);
+// });
+
+// fs.appendFile("read.txt", "\n This is new line", () => {
+//     console.log("Data appended");
+// });
+
+// fs.readFile("read.txt", "utf8", (error, data) => {
+//     console.log(data);
+// });
+// console.log("This line will run before fs.readfile function()");
+
+fs.rename("read.txt", "demo.txt", () => console.log("Renamed !!"));
