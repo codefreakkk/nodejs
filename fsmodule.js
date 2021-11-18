@@ -45,4 +45,4 @@ const fs = require("fs");
 // });
 // console.log("This line will run before fs.readfile function()");
 
-fs.rename("read.txt", "demo.txt", () => console.log("Renamed !!"));
+// fs.rename("read.txt", "demo.txt", () => console.log("Renamed !!"));
