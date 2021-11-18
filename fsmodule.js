@@ -26,4 +26,5 @@ const fs = require("fs");
 //     if (err) console.log(err);
 // });
 
-fs.unlink("read.txt");
+// delete file
+// fs.unlinkSync("read.txt");
